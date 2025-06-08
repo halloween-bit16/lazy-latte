@@ -1,0 +1,13 @@
+
+.div-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.start-img {
+    max-width: 50%;
+    height: auto;
+    cursor: pointer;
+}

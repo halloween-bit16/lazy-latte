@@ -1,0 +1,28 @@
+.main-bg{
+    background-image: url('../assets/sliced-roll-cake-wooden-board-with-cup-tea-stone-surface.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 750px;
+    box-sizing: border-box;
+
+    position: relative;
+    z-index: 0;
+}
+
+.main-bg::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: -1;
+}
+
+.main-bg > * {
+    position: relative;
+    z-index: 1;
+}
+
+.foot-style{
+    color: black;
+}

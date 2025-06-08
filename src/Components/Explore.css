@@ -1,0 +1,14 @@
+.menu-product{
+    background-color: rgb(156, 135, 101);
+    color: rgb(50, 36, 26);
+}
+
+.menu{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold !important;
+}
+
+.menu-txt{
+    text-align: center;
+}
