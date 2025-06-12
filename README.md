@@ -1,14 +1,6 @@
 # Lazy Latte - Coffee Shop Website
 Welcome to **Lazy Latte**, a modern and responsive coffee shop website built to showcase the warmth, aroma, and flavors of your favorite brew.
 
-## 🚀 Features
-
-- Sleek and responsive design
-- Interactive navigation
-- Menu section with coffee items
-- About and Contact sections
-- Smooth scroll and intuitive UX
-
 ## 🔧 Tech Stack
 
 - **Frontend:** React.js + Vite  
