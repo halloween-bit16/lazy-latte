@@ -1,0 +1,22 @@
+.about-stc{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 40px;
+   background-color:rgb(251,223,179) ;
+}
+
+img{
+    height: 200px;
+    margin-top: 25px;
+}
+
+.about-stc p{
+    text-align: left;
+    font-weight: 500 !important;
+   color: rgb(50, 36, 26) !important;
+}
+
+.about-stc a{
+    cursor: pointer;
+}

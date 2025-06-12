@@ -14,11 +14,14 @@ function Navigation(){
         navigate('/page1');
     };
 
+    const About = () => {
+        navigate('/about');
+    }
+
     return(
         <div className='nav-bar'>
-        <h1 onClick={Home}>Coffee Shop</h1>
+        <h1 onClick={Home}>Lazy Latte</h1>
         <div className="h-three">
-        <h3><a>About</a></h3>
         <h3><a onClick={Products}>Products</a></h3>
         <h3><a>Locations</a></h3>
         <h3><a>Contact</a></h3>
