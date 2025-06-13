@@ -1,6 +1,5 @@
 import React from 'react';
 import './Navigation.css';
-import Explore from './Explore';
 import { useNavigate } from 'react-router-dom';
 
 function Navigation(){
@@ -11,11 +10,15 @@ function Navigation(){
     }
 
     const Home = () => {
-        navigate('/page1');
+        navigate('/home');
     };
 
-    const About = () => {
-        navigate('/about');
+    const Locate = () => {
+        navigate('/locations');
+    }
+
+    const Book = () => {
+        navigate('/book')
     }
 
     return(
@@ -23,8 +26,8 @@ function Navigation(){
         <h1 onClick={Home}>Lazy Latte</h1>
         <div className="h-three">
         <h3><a onClick={Products}>Products</a></h3>
-        <h3><a>Locations</a></h3>
-        <h3><a>Contact</a></h3>
+        <h3><a onClick={Locate}>Locations</a></h3>
+        <h3><a onClick={Book}>Book</a></h3>
         </div>
         <hr></hr>
         </div>

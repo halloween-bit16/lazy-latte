@@ -1,6 +1,6 @@
 .menu-product{
-    background-color: rgb(251,223,179);
-    color: rgb(50, 36, 26);
+    background-color:rgb(251,223,179) ;
+    color: rgb(30, 21, 15);
 }
 
 .menu{
@@ -23,8 +23,8 @@
 
 .ctc{
     flex:1;
-    background-color: rgba(93, 66, 48, 0.151);
-    color: rgb(93,66,48);
+    background-color: rgba(93, 66, 48, 0.097);
+    color: rgb(30,21,15);
     margin-top: 20px;
     border-radius: 10px;
     padding: 15px;
@@ -42,6 +42,11 @@
     
 }
 
-h4{
-    font-weight: bold !important;
+.ctc h4{
+    font-weight: bolder !important;
+    color: rgb(30,21,15) !important;
+}
+
+.item-price{
+    color: rgb(30,21,15);
 }

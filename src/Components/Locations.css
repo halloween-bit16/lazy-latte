@@ -1,0 +1,54 @@
+.locations {
+  background-color: rgb(251, 223, 179);
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.locations h3 {
+  color: rgb(50, 36, 26);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: xxx-large;
+}
+
+.location {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px 40px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.item {
+  background-color: rgba(93, 66, 48, 0.151);
+  border-radius: 20px;
+  padding: 30px 25px;
+  width: 100%;
+  max-width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 40px;
+}
+
+.item-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #281c17;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  display: block;
+}
+
+.item-desp,
+.item-hrs,
+.item-ctc {
+  font-size: 0.95rem;
+  color: #5a4338;
+  margin-top: 5px;
+  line-height: 1.5;
+}

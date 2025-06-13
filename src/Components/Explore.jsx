@@ -51,6 +51,7 @@ function Explore(){
             ))}
         </div>
     </section>
+    <br></br><br></br>
     <Footer></Footer>
     </div>
     );
