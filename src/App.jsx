@@ -4,7 +4,7 @@ import React from 'react';
 import Start from './Components/Start';
 import Page1 from './Components/Page1';
 import Explore from './Components/Explore';
-import About from './Components/About';
+
 
 import './App.css'
 
@@ -17,7 +17,6 @@ function App(){
         <Route path="/" element={<Start></Start>}></Route>
         <Route path="/page1" element={<Page1></Page1>}></Route>
         <Route path='/explore' element={<Explore></Explore>}></Route>
-        <Route path='/about' element={<About></About>}></Route>
       </Routes>
     </Router>
     

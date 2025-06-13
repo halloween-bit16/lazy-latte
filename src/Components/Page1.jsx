@@ -1,19 +1,72 @@
 import Navigation from "./Navigation";
 import Footer from "./Footer";
-import Hero from "./Hero";
 import './Page1.css'
-import About from "./About";
-import Contact from './Contact'
+import cafe1 from '../assets/freshly-baked-pastry-with-cup-coffee-wooden-table.jpg';
+import pin from '../assets/pin.png'
+import clock from '../assets/clock.png'
+import phone from '../assets/telephone.png'
+import { useNavigate } from 'react-router-dom';
+
 
 function Page1(){
+
+    const navigate = useNavigate();
+
+    const Click = () => {
+        navigate('/explore');
+    }
+
+    const det = [
+        {img:{pin},name:'Location',desp:""},
+        {},
+        {},
+    ];
+
     return(
         <>
         <Navigation></Navigation>
         <div className="main-bg">
-             <Hero></Hero>
+            <section className="hero">
+                <div>
+                <p className="hero-p">
+                <h1 className="hero-h1">Brewed for the Soul, Sipped from the Stars</h1>
+                <br></br>
+                Step in for a brew, stay for  a taste of paradise.
+                <br></br><br></br><br></br>
+                <button className="hero-btn" onClick={Click}>Explore</button>
+                </p>
         </div>
-        <About></About>
-        <Contact></Contact>
+            </section>
+        </div>
+
+        <section className="about">
+            <div className="about-stc">
+                  <div className="about-text">
+                    <h3>About Lazy Latte ☕</h3>
+                    <br></br>
+                    <p>
+                      At Lazy Latte, we believe coffee isn’t just a drink — it’s a moment. A pause. A deep breath in the middle of a chaotic day. 
+                      Nestled in the heart of the city, Lazy Latte is your cozy escape, where comfort meets craft.
+                      <br /><br />
+                      We serve thoughtfully brewed coffee, delicious bites, and cozy vibes — perfect for slow mornings, lazy afternoons, and unhurried conversations. 
+                      Whether you're here to work, unwind, or just people-watch with a latte in hand, our space is designed to feel like your second home.
+                      <br /><br />
+                      Come sip, sit back, and savor the slow life — one lazy latte at a time.
+                    </p>
+                  </div>
+                  <div className="about-img">
+                    <img src={cafe1} alt="Cafe with pastry and coffee" />
+                  </div>
+                </div>
+        </section>
+
+        <section className="details">
+            <div className="contct">
+        <h3>Find a way to Us</h3>
+        <h6>We are here when you need a moment of peace</h6>
+           </div>
+        </section>
+
         <div className="foot-style">
             <Footer></Footer>
         </div>
