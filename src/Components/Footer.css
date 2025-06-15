@@ -1,15 +1,21 @@
-.footer{
-    background-color: rgb(93, 66, 48);
-    text-align: center;
-   
-    color: rgb(251,223,179);
+.footer {
+  background-color: rgb(93, 66, 48);
+  text-align: center;
+  color: rgb(251, 223, 179);
 }
 
-.footer img{
-    max-width:100%;
-    height: auto;
+.footer img {
+  max-width: 100%;
+  height: auto;
 }
 
-.footer p{
-    padding: 20px;
+.footer p {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer p {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
 }

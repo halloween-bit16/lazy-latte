@@ -38,9 +38,6 @@
   font-weight: bold;
   color: #281c17;
   margin-bottom: 10px;
-  display: flex;
-  justify-content: start;
-  align-items: start;
   display: block;
 }
 
@@ -51,4 +48,15 @@
   color: #5a4338;
   margin-top: 5px;
   line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .location {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .item {
+    margin: 20px 0;
+  }
 }
