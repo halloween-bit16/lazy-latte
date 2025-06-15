@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Responsive NavBar */
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.h-three {
+  margin-top: 10px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Home Page Responsive */
+.main-bg {
+  height: auto;
+  padding: 100px 20px;
+}
+
+.about-stc {
+  flex-direction: column;
+  padding: 20px;
+}
+
+.about-text {
+  min-width: 100%;
+  text-align: center;
+}
+
+.about-img {
+  min-width: 100%;
+}
+
+.hero-p,
+.hero-h1 {
+  font-size: 1.1rem;
+  padding-top: 100px;
+}
+
+.detail {
+  padding: 20px;
+}
+
+.img {
+  max-width: 40%;
+}
+
+/* Book Form */
+.book {
+  padding: 30px 10px;
+}
+
+.form {
+  padding: 30px 20px;
+}
+
+/* Explore Menu */
+.Menu {
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Locations Grid */
+.location {
+  grid-template-columns: 1fr;
+  padding: 10px;
+  gap: 20px;
+}
+
+.item {
+  margin: 20px 0;
+}
+
+/* Footer */
+.footer p {
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+/* Reusable tweaks */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-p {
+    font-size: 1rem;
+  }
+
+  .about {
+    padding: 40px 20px;
+  }
+
+  .contct {
+    padding: 20px;
+  }
+
+  .detail {
+    padding: 20px;
+  }
+
+  .form {
+    padding: 20px;
+  }
+
+  .sbmt {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .item-name {
+    font-size: 1.2rem;
+  }
+
+  .location {
+    padding: 0 10px;
+  }
+}
