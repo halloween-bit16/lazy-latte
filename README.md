@@ -23,7 +23,7 @@ npm install <br>
 npm run dev <br>
 
 ## 🌐 Live Demo
-###
+https://lazylatte.netlify.app/
 
 <br><br><br>
 Made with ☕ and ❤️ by Ruchi Pawar
