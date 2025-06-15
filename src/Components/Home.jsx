@@ -18,7 +18,7 @@ function Home(){
 
     const det = [
         {img:pin,name:'Location',desp1:'123, Maple Street',desp2:'Quiet Corner, QC 456789'},
-        {img:clock,name:'Hours',desp1:'Mon - Fri: 6:30am - 7:00pm',desp2:'Sat - Sun: 7:00am - 8:00pm'},
+        {img:clock,name:'Hours',desp1:'Mon - Fri: 7:00am - 9:00pm',desp2:'Sat - Sun: 7:00am - 11:00pm'},
         {img:phone,name:'Contact',desp1:'555-LATTE ',desp2:'hello@lazylatte.com'},
     ];
 

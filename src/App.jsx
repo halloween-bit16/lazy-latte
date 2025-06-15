@@ -5,6 +5,7 @@ import Home from './Components/Home';
 import Explore from './Components/Explore';
 import Locations from './Components/Locations';
 import Book from './Components/Book';
+import Confirm from './Components/Confirm';
 import './App.css'
 
 
@@ -18,6 +19,7 @@ function App(){
         <Route path='/explore' element={<Explore></Explore>}></Route>
         <Route path='/locations' element={<Locations></Locations>}></Route>
         <Route path='/book' element={<Book></Book>}></Route>
+        <Route path='/confirm' element={<Confirm></Confirm>}></Route>
       </Routes>
     </Router>
     
