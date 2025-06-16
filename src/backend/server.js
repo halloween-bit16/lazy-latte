@@ -16,12 +16,11 @@ app.post('/submit', async (req, res) => {
 
   const workbook = new ExcelJS.Workbook();
   let worksheet;
+  const filePath = 'reservations.xlsx';
 
   try {
-    const fileExists = fs.existsSync('reservations.xlsx');
-
-    if (fileExists) {
-      await workbook.xlsx.readFile('reservations.xlsx');
+    if (fs.existsSync(filePath)) {
+      await workbook.xlsx.readFile(filePath);
       worksheet = workbook.getWorksheet('Reservations');
 
       if (!worksheet) {
@@ -47,9 +46,6 @@ app.post('/submit', async (req, res) => {
       ];
     }
 
-    // Log incoming data
-    console.log('Received data:', formData);
-
     worksheet.addRow({
       name: formData.name || '',
       option: formData.option || '',
@@ -59,15 +55,15 @@ app.post('/submit', async (req, res) => {
       message: formData.message || '',
     });
 
-    await workbook.xlsx.writeFile('reservations.xlsx');
+    await workbook.xlsx.writeFile(filePath);
 
-    res.status(200).send('Reservation saved to Excel!');
+    res.status(200).send('Reservation saved!');
   } catch (error) {
-    console.error('Error processing reservation:', error.message);
-    res.status(500).send('Server error: ' + error.message);
+    console.error('Error:', error.message);
+    res.status(500).send('Server error');
   }
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`✅ Server running at http://localhost:${PORT}`);
 });
